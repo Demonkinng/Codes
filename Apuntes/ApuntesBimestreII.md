@@ -33,7 +33,12 @@ Una forma más elegante de controlar excepciones es throw que significa burbujea
 ![Figura 3. Ejemplo de relacion entre clases](/Apuntes\imagenes\ejemploRelacionEntreClases.png)
 ![Figura 4. Uso del try catch](/Apuntes\imagenes\usoTryCatch.png)
 
+# **Clase #03 - Custom Exception**
+### ***19/01/2023***     
+Custom exception hace referencia a personalizar las excepciones, para ello se utiliza una nueva clase y se la implementa en la capa framework, esto con la finalidad de poder mandar mensajes personalizados cuando salte una excepcion en la ejecucion y asi poder detectar las fallas mas rapido.
 
+Una ventaja de personalizar las excepciones es cuando tenemos un programa grande y cuando personalizamos podemos ir a la clase donde creamos la personalizacion y podemos comentar y asi evitar que salga saltando esa excepcion en la consola lo cual evita que la consola se inunde de mensajes pero el programa seguira funcionando.  
+![Figura 5. Uso de excepciones personalizadas](/Apuntes\imagenes\customException.png)
 
 # **Clase #04 - Data y Arquitectura N-Tier**
 ### ***20/01/2023***    
@@ -122,6 +127,13 @@ A continuación se presenta el archivo shemma.sql
 ```
 Cuando se quiere matar a una tabla entera se utiliza la palabra **DROP**, se utiliza el **DELETE** para borrar una fila de la tabla.   
 Con la palabra **AUTOINCREMENT** la base de datos se hace cargo sola de añadir el id por lo cual podemos ahorrar codigo
+
+# **Clase #06 - Asociación y Composición**
+### ***08/02/2023***    
+* **Agregación:** es un tipo de asociación que indica que una clase es parte de otra clase (composición débil). Los componentes pueden ser compartidos por varios compuestos (de la misma asociación de agregación o de varias asociaciones de agregación distintas). La destrucción del compuesto no conlleva la destrucción de los componentes. Habitualmente se da con mayor frecuencia que la composición. La agregación se representa en UML mediante un diamante de color blanco colocado en el extremo en el que está la clase que representa el “todo”.  
+* **Composición:** es una forma fuerte de composición donde la vida de la clase contenida debe coincidir con la vida de la clase contenedor. Los componentes constituyen una parte del objeto compuesto. De esta forma, los componentes no pueden ser compartidos por varios objetos compuestos. La supresión del objeto compuesto conlleva la supresión de los componentes.
+El símbolo de composición es un diamante de color negro colocado en el extremo en el que está la clase que representa el “todo” (Compuesto).
+![Figura 6. Arquitectura n-Tier de la app Tinder Pet](/Apuntes\imagenes\asociacionComposicion.png)
 
 # **Semana 7 - Exposiciones del proyecto**
 ### ***Del 27/02/2023 Al 03/03/203***
