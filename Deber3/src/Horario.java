@@ -17,7 +17,6 @@ public class Horario {
     }
 
     public static void llenarHorario(int cantidadDeFilas, String[][] horario, String horaActividad){
-        int seleccionarDia;
         for(int f = 0; f < cantidadDeFilas; f++){
             for(int c = 0; c < horario[f].length; c++){
                 if(f == 0){
